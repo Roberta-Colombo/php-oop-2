@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    padding: 35px;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+}
+
+.card-img {
+    height: 300px;
+    padding: 10px 0;
+}
+
+.cat-icon {
+    width: 20%;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+.brand {
+    padding-top: 30px;
+}
+
+.label {
+    text-align: right;
+    padding-right: 10px;
+    background-color: orange;
+    color: rgb(113, 74, 2);
+}
+
+footer {
+    height: 100px;
+    background-color: orange;
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+i {
+    padding-left: 40px;
+    transform: rotate(20deg);
+}
+
+.price {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.features {
+    color: rgb(73, 73, 180);
+}

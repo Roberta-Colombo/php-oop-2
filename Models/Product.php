@@ -1,8 +1,11 @@
 <?php
 require 'Category.php';
+require_once './Traits/Weight.php';
 
 class Product
 {
+    //uso trait Weight
+    use Weight;
     public $id;
     public $brand;
     public $modelname;

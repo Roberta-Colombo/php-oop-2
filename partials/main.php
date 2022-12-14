@@ -2,6 +2,7 @@
 include './db.php';
 ?>
 
+
 <html>
 
 <body>
@@ -14,7 +15,8 @@ include './db.php';
                 <div class="card mt-5 col-md-3 col-sm-12">
                     <img class="card-img img-fluid" src="<?php echo $value->image ?>">
                     <?php echo "<div class='brand'><h4>$value->brand </h4></div>";
-                    echo "<h4>$value->modelname</h4><br>";
+                    echo "<h4>$value->modelname</h4>" . ' ';
+                    echo "<strong>" . $value->getWeight() . "</strong>" . "<br><br>" ?? null;
                     echo "<div class='features'><strong>Caratteristiche principali:</strong></div>";
                     echo $value->type ?? null;
                     echo $value->material ?? null;

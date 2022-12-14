@@ -1,3 +1,15 @@
+<?php
+//exception - simula controllo di una eventuale ricerca per categoria (Food, Toy, Bed) da parte dell'utente
+function checkQuery($userQuery)
+{
+    if (($userQuery == ' ' || $userQuery != 'Food') && $userQuery != 'Toy' && $userQuery != 'Bed') {
+        throw new Exception('Nessuna categoria corrispondente');
+    }
+    return "Ecco i risultati: ";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +34,16 @@
     <header>
         <div>Cats and Dogs Shop <i class="fa-solid fa-paw"></i></div>
     </header>
+
+    <?php
+
+    //try-catch: se la categoria selezionata non è tra le tre previste, stampa messaggio di errore
+    try {
+        echo checkQuery(' ');
+    } catch (Exception $e) {
+        echo "<div class='msg'>" . $e->getMessage() . "</div>";
+    }
+    ?>
 
 </body>
 
